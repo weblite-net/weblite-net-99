@@ -110,7 +110,7 @@
        <div id="display-data">
         <h2 class='error'><?php echo isset($error) ? $error : "" ?> </h2>
             
-            <h2 class="centered-text">Your Projects</h2>
+            <h2 class="centered-text"><?php echo $name?>'s Projects</h2>
 
             <table id="projects">
                 <tr>
@@ -131,7 +131,7 @@
                             echo "</tr>";
                         }
                     }else{
-                        echo "<tr><td colspan='3'>You don't have any projects yet</td></tr>";
+                        echo "<tr><td colspan='3'>$name don't have any projects yet</td></tr>";
                     }
                 ?>
             </table>
